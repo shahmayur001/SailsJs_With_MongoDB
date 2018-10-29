@@ -1,0 +1,35 @@
+
+<br>
+<span  style="margin-left: 1000px;"><a href="/logout" class="btn btn-primary" role="button" >Logout</a></span> 
+<table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Show</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% studentList.forEach(function(student){ %>
+            <ul id='infinite-list'>    
+                <tr>
+                        <td> <%= student.id %> </td>
+                        <td> <%= student.name %> </td>
+                        <td> <%= student.rollno %> </td>
+                        <td> <a href="/student/<%=student.id%>">Show</a> 
+                        <td><a href="/student/edit/<%=student.id%>">Edit</a></td>
+                        <td> 
+                            <form action='/student/delete/<%=student.id%>' method='POST'>
+                            <button type="submit" class="btn btn-danger btn-sm">X</button>
+                            </form>
+                        </td>
+                </tr>
+            </ul>
+            <% }); %>
+        </tbody>
+    </table>
+<br><br>
+    <a href="/student/new">Add new student</a>

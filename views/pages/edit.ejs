@@ -1,0 +1,14 @@
+<h1 align="center">Update student</h1>
+Hello <%=student[0].name%>!
+<form method="POST", action="/student/update/<%=student[0].id%>">
+    
+    <input type="hidden" name="id" value="<%=student[0].id%>">
+    <br><br>
+    <label for="name">Name</label>
+    <input type="text" name="name" value="<%=student[0].name%>" >
+    <br> <br>
+    <label for="rollno">rollno</label>
+    <input type="number" name="rollno" value="<%=student[0].rollno%>">
+    <br> <br>   
+    <button type="submit" class="btn btn-outline-warning"> Update student</button>
+</form>
