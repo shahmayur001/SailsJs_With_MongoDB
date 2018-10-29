@@ -1,7 +1,8 @@
-# student
+# Sails Js wit MongoDB
 
-a [Sails v1](https://sailsjs.com) application
-
+a [Sails v1](https://sailsjs.com) application.Sails makes it easy to build custom, enterprise-grade Node.js apps.
+Build practical, production-ready Node.js apps in a matter of weeks, not months. 
+Sails is the most popular MVC framework for Node.js, designed to emulate the familiar MVC pattern of frameworks like Ruby on Rails, but with support for the requirements of modern apps: data-driven APIs with a scalable, service-oriented architecture.
 
 ### Links
 
@@ -11,6 +12,12 @@ a [Sails v1](https://sailsjs.com) application
 + [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
 + [Community support options](https://sailsjs.com/support)
 + [Professional / enterprise options](https://sailsjs.com/enterprise)
+
+### Steps to run projectStep 
+$ Clone the project and stuff
+$ https://github.com/shahmayur001/SailsJs_With_MongoDB.git
+$ cd student
+$ npm install
 
 
 ### Version info
