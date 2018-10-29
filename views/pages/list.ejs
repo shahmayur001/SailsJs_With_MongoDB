@@ -1,6 +1,12 @@
 
 <br>
-<span  style="margin-left: 1000px;"><a href="/logout" class="btn btn-primary" role="button" >Logout</a></span> 
+<span  style="margin-left: 1000px;"><a href="/logout" class="btn btn-primary" role="button" >Logout</a></span><br><br>  
+<div class="search-container">
+    <form action="/search">
+        <input type="text" name="search" placeholder="Search.." id="search" onfocus="width: '50px;'" value="<%=search%>"> 
+        <button type="submit" class="btn btn-secondary btn-sm">Search</button>
+    </form>
+</div>
 <table class="table table-hover">
         <thead>
             <tr>

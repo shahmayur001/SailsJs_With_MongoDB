@@ -34,14 +34,15 @@ module.exports.routes = {
   'GET /student/edit/:id': { action: 'student/edit' },
   'POST /student/update/:id': { action: 'student/update' },
   'POST /student/delete/:id': { action: 'student/delete' },
-  
+  'GET /search' : {action: 'student/search'},
+
   // User routes
   'GET /login': { action: 'user/login' },
   'POST /check_login': {action: 'user/checkLogin'},
   'GET /register' : {action: 'user/register'},
   'POST /do_register' : {action: 'user/doRegister'},
   'GET /logout' : {action: 'user/logout'}
-
+  
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *

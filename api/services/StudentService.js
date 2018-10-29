@@ -37,7 +37,7 @@ module.exports = {
           callback({ type: "Error in student get"}, null);
         }
       }catch(error){
-
+        return callback(error, null);
       }
 
     },
@@ -72,5 +72,22 @@ module.exports = {
         callback(error,null)
       }
       
+    },
+    searchStudent: async (data, callback) =>{
+      try {
+        const { search} = data;
+        const student = await Student.find({
+          name : {
+            'contains' : search
+          }
+        });
+        if (student) {
+          callback(null, student);
+        }else {
+          callback({ type: "Error in student get"}, null);
+        }
+      } catch (error) {
+        callback(error,null)
+      }
     }
 };

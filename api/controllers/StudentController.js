@@ -6,7 +6,7 @@
  */
 const Joi = require('joi');
 module.exports = {
-  
+
  list: async (req, res) => {
     StudentService.listStudent((error, result)=>{
         if (error) {
@@ -15,7 +15,8 @@ module.exports = {
         }else {
             return res.view('pages/list',{
                 studentList: result,
-                status: 'OK'
+                status: 'OK',
+                search: ''
              });
         }
     });       
@@ -81,6 +82,20 @@ module.exports = {
         }else {
             return res.redirect('/student');
         } 
+     });
+ },
+ search: (req, res) =>{
+     StudentService.searchStudent(req.allParams("name"), (error, result) => {
+        if (error) {
+            console.error("This is an error", error);
+            return res.view('500',{message: "An error occured"});
+        }else {
+            return res.view('pages/list',{
+                studentList: result,
+                status: 'OK',
+                search: req.allParams("name").search
+             });
+        }
      });
  }
 };
