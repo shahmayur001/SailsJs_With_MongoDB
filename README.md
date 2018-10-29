@@ -14,10 +14,10 @@ Sails is the most popular MVC framework for Node.js, designed to emulate the fam
 + [Professional / enterprise options](https://sailsjs.com/enterprise)
 
 ### Steps to run projectStep 
-$ Clone the project and stuff
-$ https://github.com/shahmayur001/SailsJs_With_MongoDB.git
-$ cd student
-$ npm install
++ Clone the project and stuff
++ https://github.com/shahmayur001/SailsJs_With_MongoDB.git
++ $ cd student
++ $ npm install
 
 
 ### Version info
